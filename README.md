@@ -5,6 +5,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+# for grafbase cli start
+# npx grafbase@0.24 dev
+
 npm run dev
 # or
 yarn dev
