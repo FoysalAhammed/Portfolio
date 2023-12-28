@@ -44,20 +44,23 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
 
   if (projectsToDisplay.length === 0) {
     return (
-      <section  className="bg-[url('/bg_main.svg')] bg-cover bg-center">
-        <Navbar/>
-        <Categories />
-         <Hero/>
-      <section className="flexStart flex-col paddings">
-        <p className="no-result-text text-center">Comming Soon New Projects</p>
-      </section>
-      <NewsSlider/>
+ <>
+           <section className="bg-[url('/bg_main.svg')] bg-cover bg-center  ">
+      <Navbar/>
+      <Categories />
+      <Hero/>
+    <section className="flexStart flex-col paddings mb-16 ">
+    <p className="no-result-text text-center">Comming Soon New Projects</p>
+    </section>
+    
+    </section>
+     <NewsSlider/>
      <AboutBranding/>
      <SlidGallery/>
      <ServiceBanner/> 
      <JoinUs/>
-      <Footer/>
-      </section>
+    <Footer/>  
+ </>
     )
   }
 
