@@ -3,7 +3,7 @@ import React from 'react'
 const AboutBranding = () => {
   return (
     <>
-        <section className="pt-[60px] mb-[60px] 2xl:h-[800px] ">
+        <section className="pt-[60px] mb-[60px] ">
         <div className="branding_container">
           <div className="flex flex-col lg:flex-row gap-[90px] items-center justify-between">
             <div>

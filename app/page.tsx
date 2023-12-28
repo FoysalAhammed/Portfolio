@@ -44,16 +44,23 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
 
   if (projectsToDisplay.length === 0) {
     return (
-      <section  className="bg-[url('/bg_main.svg')] bg-cover bg-center">
-        <Navbar/>
-      <section className="flexStart flex-col paddings">
-        
-         <Categories />
-
-        <p className="no-result-text text-center">No projects found, go create some first.</p>
-      </section>
-      <Footer/>
-      </section>
+ <>
+           <section className="bg-[url('/bg_main.svg')] bg-cover bg-center  ">
+      <Navbar/>
+      <Categories />
+      <Hero/>
+    <section className="flexStart flex-col paddings mb-16 ">
+    <p className="no-result-text text-center">Comming Soon New Projects</p>
+    </section>
+    
+    </section>
+     <NewsSlider/>
+     <AboutBranding/>
+     <SlidGallery/>
+     <ServiceBanner/> 
+     <JoinUs/>
+    <Footer/>  
+ </>
     )
   }
 
@@ -63,7 +70,7 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
       <Navbar/>
       <Categories />
       <Hero/>
-    <section className="flexStart flex-col paddings mb-16   ">
+    <section className="flexStart flex-col paddings mb-16 ">
       <section className="projects-grid ">
         {projectsToDisplay.map(({ node }: { node: ProjectInterface }) => (
           <ProjectCard

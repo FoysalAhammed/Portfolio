@@ -7,6 +7,7 @@ First, run the development server:
 ```bash
 # for grafbase cli start
 # npx grafbase@0.24 dev
+# 3379196193
 
 npm run dev
 # or
