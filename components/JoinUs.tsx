@@ -28,7 +28,7 @@ const JoinUs = () => {
             
             </div>
             <div>
-            <h2 className="mt-2 text-description-3 font-bold leading-[50px] tracking-[-1px] text-[50px] text-white md:text-description-2 lg:text-heading-5">  Join the community </h2>
+            <h2 className="mt-2 text-description-3 font-bold leading-[50px] tracking-[-1px] text-[50px] text-white md:text-description-2 lg:text-heading-5 hero-text2 md:hero-text lg:hero-text xl:hero-text">  Join the community </h2>
               <p className="max-w-sm text-body-5 font-normal text-white md:text-body-4">Become a member of a community of developers by supporting </p>
             </div>
           </div>
