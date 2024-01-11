@@ -45,7 +45,7 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
   if (projectsToDisplay.length === 0) {
     return (
  <>
-           <section className="bg-[url('/bg_main.svg')] bg-cover bg-center  ">
+           <section className="md:bg-[url('/bg_main.svg')] bg-center bg-cover lg:bg-[url('/bg_main.svg')] xl:bg-[url('/bg_main.svg')]  ">
       <Navbar/>
       <Categories />
       <Hero/>
@@ -63,15 +63,15 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
  </>
     )
   }
-
+  
   return (
 <>
-<section className="bg-[url('/bg_main.svg')] bg-cover bg-center  ">
+<section className=" ">
       <Navbar/>
       <Categories />
-      <Hero/>
-    <section className="flexStart flex-col paddings mb-16 ">
-      <section className="projects-grid ">
+      <Hero  />
+    <section className="flexStart flex-col   paddings mb-16 ">
+      <section className="projects-grid  ">
         {projectsToDisplay.map(({ node }: { node: ProjectInterface }) => (
           <ProjectCard
             key={`${node?.id}`}

@@ -5,7 +5,7 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <>
-      <section className="hero mt-[1rem] capitalize space-y-20 first:pt-14 last:pb-20 md:first:pt-20 lg:space-y-30">
+      <section className="hero mt-[1rem] capitalize space-y-20 first:pt-14 last:pb-20 md:first:pt-20 lg:space-y-30 md:bg-[url('/bg_main.svg')] bg-center bg-cover lg:bg-[url('/bg_main.svg')] xl:bg-[url('/bg_main.svg')] ">
         <div className="hero-area">
           <div className="relative z-10 mx-auto max-w-2xl text-center ">
             <h1 className="mb-5 text-description-3 font-semibold leading-8 md:leading-[3rem] text-black-100 md:text-heading-5 text-[25px] md:text-[45px] lg:text-[56px] lg:leading-[66px]">

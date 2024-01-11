@@ -25,8 +25,14 @@ export default function Modal({ children }: { children: ReactNode }) {
                 <Image src="/close.svg" width={17} height={17} alt="close" />
             </button>
 
-            <div ref={wrapper} className="modal_wrapper bg-[url('/bg_main.svg')] bg-cover bg-center ">
+            <div ref={wrapper} className="modal_wrapper md:bg-[url('/bg_main.png')] bg-center bg-cover lg:bg-[url('/bg_main.png')] xl:bg-[url('/bg_main.png')]  ">
                 {children}
+                <div className="flexBetween pb-12 pt-12 footer_copyright">
+            <p>@ 2023 Developer Foysal. All rights reserved</p>
+            <p className="text-gray">
+                <span className="text-black font-semibold">10,214</span> projects submitted
+            </p>
+        </div>
             </div>
         </div>
     );
